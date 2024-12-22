@@ -26,7 +26,7 @@ def setup_camera():
 def load_model_and_setup():
     """Load the trained model and set up class names"""
     try:
-        model = load_model('potato_disease_model.h5')
+        model = load_model('../potato_disease_model.h5')
         class_names = ['Early Blight', 'Healthy', 'Late Blight']
         return model, class_names
     except Exception as e:
